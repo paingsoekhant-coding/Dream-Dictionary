@@ -51,7 +51,7 @@ $results = array_filter($blogDetails, function ($item) use ($searchTitle) {
 
                 <?php endif; ?>
 
-                <a href="index.php" class="btn btn-primary mt-4">Go To Home Page</a>
+                <a href="index.php" class="btn btn-primary mb-4">Go To Home Page</a>
 
             </div>
         </div>
