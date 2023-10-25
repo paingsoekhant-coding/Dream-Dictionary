@@ -1,8 +1,5 @@
 <?php
 
-// die(var_dump($_GET['id']));
-
-
 $json_file = 'DreamDictionary.json';
 
 $json_data = file_get_contents($json_file);
@@ -10,11 +7,6 @@ $json_data = file_get_contents($json_file);
 $dreams = json_decode($json_data, true);
 
 $blogDetails = $dreams['BlogDetail'];
-
-// $blogHeaders = $dreams['BlogHeader'];
-
-
-
 
 ?>
 

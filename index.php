@@ -9,10 +9,6 @@ $dreams = json_decode($json_data, true);
 
 $blogHeaders = $dreams['BlogHeader'];
 
-// die(var_dump($blogHeaders[5]));
-
-
-
 
 ?>
 
