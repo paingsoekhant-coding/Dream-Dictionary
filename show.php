@@ -1,12 +1,8 @@
 <?php
+require_once('./function/connect.php');
+$blogDetails = $dreams->blogDetail();
 
-$json_file = 'DreamDictionary.json';
 
-$json_data = file_get_contents($json_file);
-
-$dreams = json_decode($json_data, true);
-
-$blogDetails = $dreams['BlogDetail'];
 
 ?>
 

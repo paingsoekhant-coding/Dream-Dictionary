@@ -1,13 +1,7 @@
 <?php
 
-
-$json_file = 'DreamDictionary.json';
-
-$json_data = file_get_contents($json_file);
-
-$dreams = json_decode($json_data, true);
-
-$blogHeaders = $dreams['BlogHeader'];
+require_once "./function/connect.php";
+$blogHeaders = $dreams->blogHeader();
 
 
 ?>

@@ -1,19 +1,10 @@
 <?php
 
-$json_file = 'DreamDictionary.json';
+require_once "./function/connect.php";
 
-$json_data = file_get_contents($json_file);
+$results  = $dreams->search();
 
-$dreams = json_decode($json_data, true);
-
-$blogDetails = $dreams['BlogDetail'];
-
-$searchTitle = $_POST['searchTitle'];
-
-
-$results = array_filter($blogDetails, function ($item) use ($searchTitle) {
-    return stripos($item['BlogContent'], $searchTitle) !== false;
-});
+$searchTitle = $dreams->title();
 
 ?>
 
